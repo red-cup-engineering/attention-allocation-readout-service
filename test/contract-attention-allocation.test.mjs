@@ -7,7 +7,7 @@ import test from "node:test";
 import { run, semanticDigest } from "../src/contract-attention-allocation.mjs";
 import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section/activitystreams";
 
-import { createSemanticRecordJournal } from "@red-cup-engineering/semiotic-eavt-services-section/record-semantic-record";
+import { each } from "@red-cup-engineering/semiotic-eavt-services-section/store";
 
 const PROVIDER = "urn:ame:attention-allocation-readout";
 const BUYER = "urn:ame:test-union-customer";
@@ -75,9 +75,8 @@ test("the exact SEN law settles an allocation readout in local semantic custody"
   assert.ok(result.object.exchange.resources.timeMilliseconds >= 0);
   // Read the exact persisted semantic records through their current owner;
   // a historical filename is neither a contract nor evidence of receiving.
-  const journal = createSemanticRecordJournal({ root, objectKind: "lenticule.attention-allocation-readout.journal-record" });
-  assert.deepEqual(journal.query({ category: "attention-allocation-readout-receipts" }).map(row => row.record), [result.object.receipt]);
-  assert.deepEqual(journal.query({ category: "attention-allocation-readout-readouts" }).map(row => row.record), [result.object.exchange]);
+  assert.deepEqual([...each(root, "attention-allocation-readout-receipts")].map(row => row.record), [result.object.receipt]);
+  assert.deepEqual([...each(root, "attention-allocation-readout-readouts")].map(row => row.record), [result.object.exchange]);
 });
 
 test("an inadmissible budget is refused during solicitation", async (t) => {
