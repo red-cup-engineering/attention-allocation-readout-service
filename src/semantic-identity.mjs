@@ -1,7 +1,7 @@
 import {
   EMPTY_WITNESS_ROOT,
   identifyJsonSemanticContent,
-} from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
 
 function requiredObjectKind(objectKind) {
   if (typeof objectKind !== "string" || objectKind.length === 0) throw new TypeError("semantic object kind is required");

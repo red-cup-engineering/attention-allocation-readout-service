@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/attention-allocation-readout-service",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "Union-facing OSS boundary for a qualified executable projection of the monotone-budget greedy attention allocation, grounded in Obsmetrologia mathematics.",
   "keywords": [
@@ -17,17 +17,18 @@
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/activitypub-services-section": "0.8.2",
-    "@red-cup-engineering/computer-code-engineering-services-section": "0.1.0",
     "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
-    "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.0",
-    "@red-cup-engineering/computer-system-engine": "0.1.0",
-    "@red-cup-engineering/metrologic": "0.3.0",
-    "@red-cup-engineering/witness-journal-document-service": "0.1.1",
+    "@red-cup-engineering/metrologic": "0.4.0",
     "@red-cup-engineering/signgraph": "0.1.0",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
-    "@red-cup-engineering/computer-inference-engine": "0.1.0",
-    "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section": "0.1.0"
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+    "@red-cup-engineering/computer-code-engineering-services-section": "0.1.2",
+    "@red-cup-engineering/witness-journal-document-service": "0.1.2",
+    "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section": "0.1.1",
+    "@red-cup-engineering/activitypub-services-section": "0.8.4",
+    "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
+    "@red-cup-engineering/computer-system-engine": "0.1.2",
+    "@red-cup-engineering/computer-inference-engine": "0.1.2"
   },
   "license": "UNLICENSED",
   "exports": {
