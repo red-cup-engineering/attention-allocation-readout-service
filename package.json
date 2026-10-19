@@ -5,8 +5,7 @@
   "description": "Union-facing OSS boundary for a qualified executable projection of the monotone-budget greedy attention allocation, grounded in Obsmetrologia mathematics.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/semiotic-computer-system-services-section.git",
-    "directory": "services/semiotic-agent-services-section/services/attention-services-section/services/attention-allocation-readout-service"
+    "url": "git+https://github.com/red-cup-engineering/attention-allocation-readout-service.git"
   },
   "keywords": [
     "activitystreams",
