@@ -13,12 +13,12 @@ const kinds = Object.freeze({
   "work-placement": "attention-work-placement",
 });
 
-export function readAttentionLocally({ mode = "allocate", input }) {
+export async function readAttentionLocally({ mode = "allocate", input }) {
   const name = kinds[mode];
   if (!name) throw new TypeError("Unknown attention mode: " + mode);
   const operation = attentionAllocationOperations().find(entry => entry.verb === name);
   if (!operation) throw new TypeError("Original attention operation is unavailable: " + name);
-  const result = operation.execute(input);
+  const result = await operation.execute(input);
   return Object.freeze({
     kind: "attention.local-source-readout.v1",
     operation: name,
