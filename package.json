@@ -21,7 +21,7 @@
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/semiotic-eavt-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
     "@red-cup-engineering/metrologic": "0.4.0",
     "@red-cup-engineering/signgraph": "0.1.0",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
@@ -29,7 +29,7 @@
     "@red-cup-engineering/computer-code-engineering-services-section": "0.1.2",
     "@red-cup-engineering/witness-journal-document-service": "0.1.2",
     "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section": "0.1.1",
-    "@red-cup-engineering/activitypub-engineering-services-section": "0.8.4",
+    "@red-cup-engineering/activitypub-services-section": "0.8.4",
     "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
     "@red-cup-engineering/computer-system-engine": "0.1.2",
     "@red-cup-engineering/computer-inference-engine": "0.1.2"
