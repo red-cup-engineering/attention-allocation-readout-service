@@ -5,6 +5,7 @@
  * It cannot accept an organizational contract, allocate Work, or mutate data.
  */
 import { fileURLToPath } from "node:url";
+import { realpathSync } from "node:fs";
 import { resolve } from "node:path";
 import { attentionAllocationOperations } from "./operations.mjs";
 
@@ -87,7 +88,7 @@ export async function main(args = process.argv.slice(2), {
   return 0;
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+if (process.argv[1] && realpathSync(resolve(process.argv[1])) === realpathSync(fileURLToPath(import.meta.url))) {
   main().then(value => { process.exitCode = value; }).catch(error => {
     process.stderr.write("attention-plan: " + error.message + "\n");
     process.exitCode = 1;
