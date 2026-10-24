@@ -1,0 +1,37 @@
+name: Execute the source-owned attention readout
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  run-attention:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: '24'
+      - name: Resolve the actual maintained operations
+        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+      - name: Print the actual operation inventory
+        run: node src/attention-plan.mjs --operations
+      - name: Execute the actual attention law over the illustrative input
+        run: |
+          node src/attention-plan.mjs --run-example > "$RUNNER_TEMP/attention.json"
+          node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const r=JSON.parse(readFileSync(process.argv[1], "utf8"));
+            console.log("Real metrologic allocation:",JSON.stringify(r.result));
+            if (r.operation!=="attention-allocation" ||
+                JSON.stringify(r.result.funded)!==JSON.stringify(["understand-the-interface","trace-a-receipt"])) {
+              throw new Error("source-owned allocation did not choose its recorded exact optimum");
+            }
+          ' "$RUNNER_TEMP/attention.json"
