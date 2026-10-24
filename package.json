@@ -2,7 +2,7 @@
   "name": "@red-cup-engineering/attention-allocation-readout-service",
   "version": "0.1.5",
   "type": "module",
-  "description": "Union-facing OSS boundary for a qualified executable projection of the monotone-budget greedy attention allocation, grounded in Obsmetrologia mathematics.",
+  "description": "Finite-budget mathematical attention allocation and denomination-aware work placement, with a runnable pure planning command and separately governed service contracts.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/attention-allocation-readout-service.git"
@@ -15,10 +15,12 @@
   ],
   "bin": {
     "solicit-service": "./src/contract-attention-allocation.mjs",
-    "invoke-service": "./src/contract-attention-allocation.mjs"
+    "invoke-service": "./src/contract-attention-allocation.mjs",
+    "attention-plan": "./src/attention-plan.mjs"
   },
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node --test test/*.test.mjs",
+    "experience": "node src/attention-plan.mjs --run-example"
   },
   "dependencies": {
     "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
@@ -37,7 +39,8 @@
   "license": "MIT",
   "exports": {
     "./operations": "./src/operations.mjs",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./local-readout": "./src/attention-plan.mjs"
   },
   "private": false,
   "files": [
