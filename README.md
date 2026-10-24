@@ -11,7 +11,7 @@
 chooses a bounded set to attend to.** Each obstruction has an explicit
 identifier, cost, and benefit; an attention budget limits how many can be
 reconciled. The underlying mathematics comes from
-[Metrologic](https://github.com/red-cup-engineering/metrologic)
+the source-owned `@red-cup-engineering/metrologic` dependency
 and the Group's Obsmetrologia research. This repository provides an
 executable readout and a separately governed service contract.
 
@@ -21,16 +21,23 @@ evidence; the algorithm cannot determine which goals are valuable.
 
 ## Actually use it
 
-The package `@red-cup-engineering/attention-allocation-readout-service`
-now ships a pure `attention-plan` executable. After installing the package
-and its declared dependencies:
+The source repository now defines a pure `attention-plan` executable.
+The following is a **checkout** workflow using its maintained code and
+declared dependencies, not an assertion that the new CLI is already
+published in the registry:
 
 ```sh
-attention-plan --example          # inspect an illustrative input
-attention-plan --run-example      # actually invoke the installed allocation law
-attention-plan --example | attention-plan  # pass JSON through the normal CLI interface
-attention-plan --operations       # read the two source-declared operation contracts
+npm install --ignore-scripts
+node src/attention-plan.mjs --example
+node src/attention-plan.mjs --run-example
+node src/attention-plan.mjs --operations
+node src/attention-plan.mjs --example | node src/attention-plan.mjs
 ```
+
+The package also declares an `attention-plan` bin for distribution. A
+separate packed-artifact consumer check qualifies that entry point;
+whether a given registry release includes these changes must be verified
+against the registry itself. A source merge is not a publication receipt.
 
 A call can also read a real, caller-authored JSON problem:
 
