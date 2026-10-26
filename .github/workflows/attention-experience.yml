@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: '24'
       - name: Resolve the actual maintained operations
-        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+        run: npm ci --ignore-scripts --no-audit --no-fund --fetch-retries=1
+      - name: Receive native attention and the original service behavior
+        run: npm test
       - name: Print the actual operation inventory
         run: node src/attention-plan.mjs --operations
       - name: Execute the actual attention law over the illustrative input
@@ -31,6 +33,7 @@ jobs:
             const r=JSON.parse(readFileSync(process.argv[1], "utf8"));
             console.log("Real metrologic allocation:",JSON.stringify(r.result));
             if (r.operation!=="attention-allocation" ||
+                r.result.evidence?.kind!=="signcraft.attention-work-evidence/v1" ||
                 JSON.stringify(r.result.readNext)!==JSON.stringify(["understand-the-interface","trace-a-receipt"])) {
               throw new Error("source-owned allocation did not choose its recorded exact optimum");
             }
@@ -47,6 +50,7 @@ jobs:
             import { readFileSync } from "node:fs";
             const r=JSON.parse(readFileSync(process.argv[1], "utf8"));
             if (r.operation!=="attention-allocation" ||
+                r.result.evidence?.kind!=="signcraft.attention-work-evidence/v1" ||
                 JSON.stringify(r.result.readNext)!==JSON.stringify(["understand-the-interface","trace-a-receipt"])) {
               throw new Error("packed external consumer did not execute source-owned attention law");
             }

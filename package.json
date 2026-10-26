@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/attention-allocation-readout-service",
-  "version": "0.1.5",
+  "version": "0.1.6-dev.0",
   "type": "module",
   "description": "Finite-budget mathematical attention allocation and denomination-aware work placement, with a runnable pure planning command and separately governed service contracts.",
   "repository": {
@@ -34,7 +34,8 @@
     "@red-cup-engineering/activitypub-services-section": "0.8.4",
     "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
     "@red-cup-engineering/computer-system-engine": "0.1.2",
-    "@red-cup-engineering/computer-inference-engine": "0.1.2"
+    "@red-cup-engineering/computer-inference-engine": "0.1.2",
+    "@red-cup-engineering/signcraft": "0.6.1-dev.503"
   },
   "license": "MIT",
   "exports": {
@@ -47,10 +48,14 @@
     "package.json",
     "README*",
     "LICENSE*",
-    "src"
+    "src",
+    "test/attention-cellular-operation.test.mjs"
   ],
   "funding": {
     "type": "individual",
     "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
-  }
+  },
+  "receivingTests": [
+    "test/attention-cellular-operation.test.mjs"
+  ]
 }
