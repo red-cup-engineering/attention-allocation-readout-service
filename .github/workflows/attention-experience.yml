@@ -11,7 +11,7 @@ permissions:
 jobs:
   run-attention:
     runs-on: ubuntu-24.04
-    timeout-minutes: 7
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -44,7 +44,7 @@ jobs:
           tarball="$(find "$RUNNER_TEMP" -maxdepth 1 -type f -name '*attention-allocation-readout-service-*.tgz' -print -quit)"
           test -n "$tarball"
           mkdir -p "$RUNNER_TEMP/packed-consumer"
-          npm install --prefix "$RUNNER_TEMP/packed-consumer" "$tarball"             --registry=https://registry.561.group/             --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+          npm install --prefix "$RUNNER_TEMP/packed-consumer" "$tarball"             --registry=https://registry.561.group/             --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000 --loglevel=http
           "$RUNNER_TEMP/packed-consumer/node_modules/.bin/attention-plan" --run-example > "$RUNNER_TEMP/packed.json"
           node --input-type=module -e '
             import { readFileSync } from "node:fs";
