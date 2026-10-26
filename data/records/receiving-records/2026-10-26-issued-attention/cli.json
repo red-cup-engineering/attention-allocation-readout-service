@@ -1,0 +1,706 @@
+{
+  "kind": "attention.local-source-readout.v1",
+  "operation": "attention-allocation",
+  "input": {
+    "budget": 5,
+    "obstructions": [
+      {
+        "id": "understand-the-interface",
+        "cost": 2,
+        "benefit": 5
+      },
+      {
+        "id": "trace-a-receipt",
+        "cost": 3,
+        "benefit": 6
+      },
+      {
+        "id": "rework-the-entire-platform",
+        "cost": 5,
+        "benefit": 9
+      }
+    ]
+  },
+  "result": {
+    "type": "AttentionAllocation",
+    "budget": 5,
+    "readNext": [
+      "understand-the-interface",
+      "trace-a-receipt"
+    ],
+    "selected": [
+      {
+        "id": "understand-the-interface",
+        "cost": 2,
+        "benefit": 5
+      },
+      {
+        "id": "trace-a-receipt",
+        "cost": 3,
+        "benefit": 6
+      }
+    ],
+    "cost": 5,
+    "benefit": 11,
+    "residual": 9,
+    "exact": true,
+    "choiceBits": 0,
+    "choiceBitsNat": 0,
+    "degeneracy": 1,
+    "evidence": {
+      "kind": "signcraft.attention-work-evidence/v1",
+      "requestId": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+      "modelId": "ni:///sha-256;zQ1Y9JCgUdwV6upqDH3K9q6DD4e0k5xAhFtsXkhWKJk",
+      "resultId": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+      "modelRows": [
+        {
+          "subject": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "predicate": "urn:561:mathematics:attention-allocation:budget",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "budget"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "predicate": "urn:561:mathematics:attention-allocation:suppliedPolicy",
+          "object": null,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "suppliedPolicy"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "predicate": "urn:561:mathematics:attention-allocation:obstruction",
+          "object": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            0
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              0
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:id",
+          "object": "understand-the-interface",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              0,
+              "id"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 2,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              0,
+              "cost"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              0,
+              "benefit"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "predicate": "urn:561:mathematics:attention-allocation:obstruction",
+          "object": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            1
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              1
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:id",
+          "object": "trace-a-receipt",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              1,
+              "id"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 3,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              1,
+              "cost"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 6,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              1,
+              "benefit"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "predicate": "urn:561:mathematics:attention-allocation:obstruction",
+          "object": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            2
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              2
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            2
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:id",
+          "object": "rework-the-entire-platform",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              2,
+              "id"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            2
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              2,
+              "cost"
+            ],
+            "observation": "submitted-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "obstruction",
+            2
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 9,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "path": [
+              "obstructions",
+              2,
+              "benefit"
+            ],
+            "observation": "submitted-model-value"
+          }
+        }
+      ],
+      "resultRows": [
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:type",
+          "object": "AttentionAllocation",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "type"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:budget",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "budget"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "cost"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 11,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "benefit"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:residual",
+          "object": 9,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "residual"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:exact",
+          "object": true,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "exact"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:choiceBits",
+          "object": 0,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "choiceBits"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:choiceBitsNat",
+          "object": 0,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "choiceBitsNat"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:degeneracy",
+          "object": 1,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "degeneracy"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:readNext",
+          "object": [
+            0,
+            "understand-the-interface"
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "readNext",
+              0
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:readNext",
+          "object": [
+            1,
+            "trace-a-receipt"
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "readNext",
+              1
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:selected",
+          "object": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            0
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              0
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:id",
+          "object": "understand-the-interface",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              0,
+              "id"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 2,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              0,
+              "cost"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            0
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 5,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              0,
+              "benefit"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:selected",
+          "object": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            1
+          ],
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              1
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:id",
+          "object": "trace-a-receipt",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              1,
+              "id"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:cost",
+          "object": 3,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              1,
+              "cost"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": [
+            "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "selected",
+            1
+          ],
+          "predicate": "urn:561:mathematics:attention-allocation:benefit",
+          "object": 6,
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "path": [
+              "selected",
+              1,
+              "benefit"
+            ],
+            "observation": "computed-model-value"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:computedFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "scope": "computed finite natural-count model; no Lean extraction or external observation"
+          }
+        },
+        {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:conditionallyOptimalFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+          "side": "for",
+          "witness": {
+            "source": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+            "request": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE",
+            "provider": "@red-cup-engineering/metrologic/obstruction/attention-allocation#allocateAttention",
+            "scope": "computed finite natural-count model; no Lean extraction or external observation"
+          }
+        }
+      ],
+      "claims": {
+        "computed": {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:computedFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE"
+        },
+        "optimum": {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:conditionallyOptimalFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE"
+        },
+        "reconciled": {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:obstructionsReconciledFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE"
+        },
+        "userAccepted": {
+          "subject": "ni:///sha-256;w65_qy32hCpIluEbR_nlD2ilLlGNqjU3Lc82Kt1ChMU",
+          "predicate": "urn:561:mathematics:attention-allocation:userAcceptedFor",
+          "object": "ni:///sha-256;vh-XyMUwcXMmKJT9ytAlPKVx9eN-FVlpzFo5_TFBSyE"
+        }
+      },
+      "objective": "maximum-captured-benefit-subject-to-scalar-cost-budget",
+      "exactTiePolicy": "tail-first-in-original-input-order",
+      "interruptedSelection": "original-feasible-search-incumbent-no-general-approximation-ratio",
+      "readNextPolicy": "original-density-descending-then-benefit-descending-then-id.localeCompare",
+      "costGrade": "nonnegative-safe-integer-count",
+      "benefitGrade": "nonnegative-safe-integer-count",
+      "scope": "computed finite natural-count model; no Lean extraction or external observation"
+    }
+  },
+  "effect": "read-only; no Work assignment, contract acceptance, execution or settlement",
+  "authority": "none inferred from selecting or scoring candidates"
+}

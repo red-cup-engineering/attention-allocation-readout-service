@@ -107,3 +107,40 @@ premises*, its budget, unselected benefit and ties. It does not establish
 that the premises were measured correctly, that selected work was performed,
 that a receiver accepted it, or that any economic settlement happened.
 Those are distinct operations with their own owners and evidence.
+
+## Native source and result evidence
+
+The scalar `attention-allocation` operation uses SignCraft's original
+`computeAttentionWork` producer, which reconstructs source-told Cells and
+calls the existing Metrologic optimizer. It keeps the familiar allocation
+fields and adds `evidence` containing the native model and result tellings.
+
+The returned selection obeys the supplied scalar budget. A completed
+search supports a conditional optimum claim with the original tail-first
+input-position tie convention. A bounded search can return a feasible
+incumbent with `exact: false`; this carries no general approximation
+ratio. The unselected-benefit residual remains visible. Actual
+reconciliation and user acceptance require separate observations.
+
+A host may construct this operation family with its own search policy:
+
+```js
+const operations = attentionAllocationOperations({
+  allocationPolicy: { maxSearchNodes: 1000, maxObstructions: 32 },
+});
+```
+
+These illustrative limits are host configuration, separate from the
+request body. The factory snapshots them. A caller's `maxSearchNodes`
+can reduce the search bound. Mathematical use may omit the host policy,
+as the original optimizer permits; the standalone CLI retains that
+behavior. Costs and benefits remain abstract counts unless the calling
+Service Section supplies compatible units, source measurements or model
+assumptions, and an explicit evaluation time where required.
+
+Consumers can use SignCraft's `replayAttentionWork(input, result, policy)`
+to bind the retained evidence to the same input and host policy. This
+reexecutes the full producer; it is not an independent optimizer
+certificate. `readAttentionWorkEvidence` preserves opposing observations
+when supplied. The producer and this operation remain pure; contract
+execution and its journal retain their existing ownership.

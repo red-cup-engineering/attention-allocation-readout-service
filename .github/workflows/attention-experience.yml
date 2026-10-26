@@ -11,7 +11,7 @@ permissions:
 jobs:
   run-attention:
     runs-on: ubuntu-24.04
-    timeout-minutes: 7
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: '24'
       - name: Resolve the actual maintained operations
-        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+        run: npm ci --ignore-scripts --no-audit --no-fund --fetch-retries=1
+      - name: Receive native attention and the original service behavior
+        run: npm test
       - name: Print the actual operation inventory
         run: node src/attention-plan.mjs --operations
       - name: Execute the actual attention law over the illustrative input
@@ -31,6 +33,7 @@ jobs:
             const r=JSON.parse(readFileSync(process.argv[1], "utf8"));
             console.log("Real metrologic allocation:",JSON.stringify(r.result));
             if (r.operation!=="attention-allocation" ||
+                r.result.evidence?.kind!=="signcraft.attention-work-evidence/v1" ||
                 JSON.stringify(r.result.readNext)!==JSON.stringify(["understand-the-interface","trace-a-receipt"])) {
               throw new Error("source-owned allocation did not choose its recorded exact optimum");
             }
@@ -41,12 +44,13 @@ jobs:
           tarball="$(find "$RUNNER_TEMP" -maxdepth 1 -type f -name '*attention-allocation-readout-service-*.tgz' -print -quit)"
           test -n "$tarball"
           mkdir -p "$RUNNER_TEMP/packed-consumer"
-          npm install --prefix "$RUNNER_TEMP/packed-consumer" "$tarball"             --registry=https://registry.561.group/             --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+          npm install --prefix "$RUNNER_TEMP/packed-consumer" "$tarball"             --registry=https://registry.561.group/             --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1 --fetch-timeout=30000 --loglevel=http
           "$RUNNER_TEMP/packed-consumer/node_modules/.bin/attention-plan" --run-example > "$RUNNER_TEMP/packed.json"
           node --input-type=module -e '
             import { readFileSync } from "node:fs";
             const r=JSON.parse(readFileSync(process.argv[1], "utf8"));
             if (r.operation!=="attention-allocation" ||
+                r.result.evidence?.kind!=="signcraft.attention-work-evidence/v1" ||
                 JSON.stringify(r.result.readNext)!==JSON.stringify(["understand-the-interface","trace-a-receipt"])) {
               throw new Error("packed external consumer did not execute source-owned attention law");
             }
