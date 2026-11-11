@@ -1,4 +1,4 @@
-import { put } from "@red-cup-engineering/semiotic-eavt-services-section/store";
+import { put } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/store";
 
 /**
  * Provider-owned custody for this service's ActivityStreams evidence.

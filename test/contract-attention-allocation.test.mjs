@@ -7,7 +7,7 @@ import test from "node:test";
 import { run, semanticDigest } from "../src/contract-attention-allocation.mjs";
 import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section/activitystreams";
 
-import { each } from "@red-cup-engineering/semiotic-eavt-services-section/store";
+import { each } from "@red-cup-engineering/semiotic-eavt-engineering-services-section/store";
 
 const PROVIDER = "urn:ame:attention-allocation-readout";
 const BUYER = "urn:ame:test-union-customer";
