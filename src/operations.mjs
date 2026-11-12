@@ -3,7 +3,7 @@
  * finite budget reads which to reconcile next (metrologic's attention allocation, from
  * Obsmetrologia's Cohomology/AttentionAllocation.lean).
  */
-import { operation } from "@red-cup-engineering/computer-system-engine/rpc/operation";
+import { operation } from "@red-cup-engineering/computer-engine/rpc/operation";
 import { admitAttentionWork, computeAttentionWork } from "@red-cup-engineering/signcraft/attention-work";
 import { decideAttentionWorkPlacement } from "@red-cup-engineering/computer-inference-engine/dispatch/work-placement";
 

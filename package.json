@@ -33,7 +33,7 @@
     "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section": "0.1.1",
     "@red-cup-engineering/activitypub-engineering-services-section": "^0.11.6",
     "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
-    "@red-cup-engineering/computer-system-engine": "0.1.2",
+    "@red-cup-engineering/computer-engine": "^0.1.2",
     "@red-cup-engineering/computer-inference-engine": "0.1.2",
     "@red-cup-engineering/signcraft": "0.6.1-dev.503"
   },
