@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: the original scalar operation returns a native positive allocation
+ok 1 - the original scalar operation returns a native positive allocation
+  ---
+  duration_ms: 115.189764
+  type: 'test'
+  ...
+# Subtest: the service factory retains a supplied host cap outside caller input
+ok 2 - the service factory retains a supplied host cap outside caller input
+  ---
+  duration_ms: 85.793808
+  type: 'test'
+  ...
+# Subtest: service setup uses original cheap policy admission
+ok 3 - service setup uses original cheap policy admission
+  ---
+  duration_ms: 0.189615
+  type: 'test'
+  ...
+# Subtest: the existing provider operation family executes measured placement without host effects
+ok 4 - the existing provider operation family executes measured placement without host effects
+  ---
+  duration_ms: 2.838962
+  type: 'test'
+  ...
+# Subtest: the existing scalar attention readout remains available unchanged
+ok 5 - the existing scalar attention readout remains available unchanged
+  ---
+  duration_ms: 4.949698
+  type: 'test'
+  ...
+# Subtest: the exact SEN law settles an allocation readout in local semantic custody
+ok 6 - the exact SEN law settles an allocation readout in local semantic custody
+  ---
+  duration_ms: 474.283459
+  type: 'test'
+  ...
+# Subtest: an inadmissible budget is refused during solicitation
+ok 7 - an inadmissible budget is refused during solicitation
+  ---
+  duration_ms: 10.268522
+  type: 'test'
+  ...
+# Subtest: a duplicate candidate id is refused during solicitation
+ok 8 - a duplicate candidate id is refused during solicitation
+  ---
+  duration_ms: 16.41464
+  type: 'test'
+  ...
+# Subtest: altered terms and wrong laws are refused without a readout
+ok 9 - altered terms and wrong laws are refused without a readout
+  ---
+  duration_ms: 210.235284
+  type: 'test'
+  ...
+# Subtest: local semantic custody needs no remote journal authority
+ok 10 - local semantic custody needs no remote journal authority
+  ---
+  duration_ms: 103.028519
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1433.123066

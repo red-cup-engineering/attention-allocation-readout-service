@@ -1,0 +1,221 @@
+{
+  "observedAt": "2026-10-26T21:57:18.238176+00:00",
+  "repository": "red-cup-engineering/attention-allocation-readout-service",
+  "baseCommit": "2b7b4936d82e2a1f83420f95b7f00be96a6175eb",
+  "sourceVersion": "0.1.6-dev.0",
+  "sourcePackage": {
+    "bytes": 2345,
+    "sha256": "5a721ea2c410e454a21922d8207445025d9e9968e7b1fd2b5e927a7d383dde31",
+    "gitBlob": "5c58aca15be91e0091467d6e00fc65d079cd2641"
+  },
+  "sourceOperations": {
+    "bytes": 2844,
+    "sha256": "2a30618c42fffa5527783edde9ea4ab881ed07e928b8760f0c8024b7f7311860",
+    "gitBlob": "e3723157d4eefa867034800ffbab09488c69217d"
+  },
+  "preservedOriginalTrackedFiles": 13,
+  "supplier": {
+    "name": "@red-cup-engineering/signcraft",
+    "version": "0.6.1-dev.503",
+    "gitHead": "ed5808ffca2148b03535548d3678ba4120168f43",
+    "dist": {
+      "shasum": "c7e04ed6851184dfb383a3e8fb2f29dd0f95df5d",
+      "integrity": "sha512-WdO++IH1woyw6Q38MCRMtVS99iAN9E0fOgvbXxBQlqsYZaYqP6HmcPZhTMgbo9um66ofF2shplwgmF9hZTXplA==",
+      "tarball": "https://registry.561.group/@red-cup-engineering/signcraft/-/signcraft-0.6.1-dev.503.tgz"
+    },
+    "archive": {
+      "bytes": 230106,
+      "sha256": "951a6b7484b6e6830c9992fd2c2844d170ea03cfe6031e4b548e87d11f528e32",
+      "gitBlob": "a142797daaf47073747f4df97284a256aab15f1b"
+    },
+    "attentionModule": {
+      "bytes": 7769,
+      "sha256": "5566926e6c7719a140f0eb199fb5288229ad56f55b2eee1a0e7a57bf75983ea6",
+      "gitBlob": "e9ba8f59470cdd7e374071b949788ca7f56518de"
+    },
+    "export": "./attention-work",
+    "receivedPackageRoot": "/workspace/scratch/bfa772792e57/section-continuation/kernel/issued/signcraft-0.6.1-dev.503/package",
+    "unchangedDeclaredDependencyMap": true,
+    "originalDirectPinsPreserved": {
+      "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
+      "@red-cup-engineering/metrologic": "0.4.0",
+      "@red-cup-engineering/signgraph": "0.1.0",
+      "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
+      "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+      "@red-cup-engineering/computer-code-engineering-services-section": "0.1.2",
+      "@red-cup-engineering/witness-journal-document-service": "0.1.2",
+      "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section": "0.1.1",
+      "@red-cup-engineering/activitypub-services-section": "0.8.4",
+      "@red-cup-engineering/computer-networking-engineering-services-section": "0.1.2",
+      "@red-cup-engineering/computer-system-engine": "0.1.2",
+      "@red-cup-engineering/computer-inference-engine": "0.1.2"
+    }
+  },
+  "lock": {
+    "producer": "npm11.9.0",
+    "command": [
+      "npm",
+      "install",
+      "--package-lock-only",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--fetch-retries=1",
+      "--fetch-timeout=30000",
+      "--registry=https://registry.561.group/"
+    ],
+    "exitCode": 0,
+    "rootMatchesManifest": true,
+    "exactDirectPins": 13,
+    "packageRecords": 940,
+    "sourceLock": {
+      "bytes": 674095,
+      "sha256": "a3c67a9d470c4f3c4e9c362bd55c72eee9306d41e14b3c2e6aa158439698eb59",
+      "gitBlob": "20ad462a95da8317ea178feeab38db3e0b5528f8"
+    },
+    "localLinkRecords": 0,
+    "issuedCraftDistMatches": true,
+    "activePackageVersionsPresentInLock": 71,
+    "activePackageVersionsAbsentFromLock": 0,
+    "nativeFrozenPlan": {
+      "command": [
+        "npm",
+        "ci",
+        "--dry-run",
+        "--ignore-scripts",
+        "--offline",
+        "--no-audit",
+        "--no-fund",
+        "--cache=../pack-cache"
+      ],
+      "exitCode": 0,
+      "platformSelectedAdds": 888,
+      "nodeModulesCreated": false,
+      "lockUnchanged": true
+    },
+    "replacedInheritedLock": {
+      "original": {
+        "bytes": 53127,
+        "sha256": "c096f4b5cc9d685ccf1d42c2fae55e6ed89b92c69e8182b5325273c276afdc15",
+        "gitBlob": "50244bea27634f854c30c7d032b6e154438810b5"
+      },
+      "sourceVersion": "0.1.4",
+      "reason": "Original native npm rejected missing local Metrologic link target with EMISSINGTARGET; inherited root manifest and dependency family were stale. New lock is original native resolver output, not a hand-edited composition."
+    }
+  },
+  "qualification": {
+    "node": "v24.22.1",
+    "npm": "11.9.0",
+    "sourceCommand": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-reporter=tap",
+      "test/attention-work-placement.test.mjs",
+      "test/contract-attention-allocation.test.mjs",
+      "test/attention-cellular-operation.test.mjs"
+    ],
+    "sourceResult": {
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "sourceRaw": {
+      "bytes": 2106,
+      "sha256": "d1b4e34f8bbc80cfca1e7d0e3fadc8f043754067ed111deef5a794dceaa25310",
+      "gitBlob": "37b5f4e1badaab8a2864ec4d5d8a0b4a4b9eba64"
+    },
+    "packedCommand": [
+      "node",
+      "--test",
+      "--test-isolation=none",
+      "--test-reporter=tap",
+      "test/attention-cellular-operation.test.mjs"
+    ],
+    "packedResult": {
+      "tests": 3,
+      "pass": 3,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "packedRaw": {
+      "bytes": 702,
+      "sha256": "2b0687e1914d14d9706383adb77b0933054f8a2db4203d0a143987fff9102dee",
+      "gitBlob": "7e2089177ee66e11a552606162f91754b2c1d63d"
+    },
+    "scope": "Complete consumer source and actual native npm archive executed with the issued Craft provider and read-only existing importer-relative supplier closures. No dependency installation or live service activation.",
+    "staticClosure": {
+      "files": 439,
+      "packages": 72,
+      "errors": 0,
+      "exactPinMismatches": 0,
+      "scope": "Static ESM imports and JSON resources resolved natively; modules parsed but not evaluated. Dynamic imports and CommonJS require graphs are not enumerated. Exact declared versions checked; ranged declarations listed separately."
+    },
+    "cli": {
+      "sourceCommand": [
+        "node",
+        "src/attention-plan.mjs",
+        "--run-example"
+      ],
+      "archiveCommand": [
+        "node",
+        "src/attention-plan.mjs",
+        "--run-example"
+      ],
+      "sourceArchiveEqual": true,
+      "actualDeclaredBin": "src/attention-plan.mjs",
+      "readNext": [
+        "understand-the-interface",
+        "trace-a-receipt"
+      ],
+      "cost": 5,
+      "benefit": 11,
+      "residual": 9,
+      "exact": true,
+      "evidenceKind": "signcraft.attention-work-evidence/v1",
+      "raw": {
+        "bytes": 25975,
+        "sha256": "9c8735185d7a4ed3771eb3e2e82a008852fe9280360a3bb566a5e245b8d8af41",
+        "gitBlob": "8ce053643a532de2a8ed278c63f8f4ee2f41d8a5"
+      }
+    },
+    "independentReview": "Root independently reviewed and approved adapter, three regression cases, provider contract, manifest prerelease choice and workflow; no extra rerun requested."
+  },
+  "consumerArchive": {
+    "producer": "npm pack --ignore-scripts",
+    "filename": "red-cup-engineering-attention-allocation-readout-service-0.1.6-dev.0.tgz",
+    "archive": {
+      "bytes": 11522,
+      "sha256": "45c409d455588894f03108b7e982fc2f4861245c49b86ae3dc1b5d8067db2b9a",
+      "gitBlob": "0f49201070576a215f247202f0f7d09f768c7563"
+    },
+    "integrity": "sha512-Lciapd5qps1y2dR5+Mp0V97gzvFWyILmjch8nsETYd9X+9/k4/z4ZWLVTZ+smRyoh8L2bZ7WZV2uHf40os1qnQ==",
+    "shasum": "9819eb61e412ba2c1e025019239df1ed366f14a1",
+    "files": 9,
+    "sourceFileBytesPreserved": true,
+    "repackedFinalSourceEqualsTestedArchive": true,
+    "receivingTests": [
+      "test/attention-cellular-operation.test.mjs"
+    ],
+    "published": false
+  },
+  "claims": [
+    "The original attention-allocation operation returns original numerical output plus native source/result evidence through the actual issued Craft producer.",
+    "Completed finite search carries a conditional optimum under the supplied mathematical model and original tie rule.",
+    "A supplied host cap is snapshotted outside caller input; interrupted search returns the original feasible incumbent and leaves optimality untold.",
+    "Original attention-work-placement and separately effectful contract/journal behavior remain received."
+  ],
+  "limits": [
+    "Costs and benefits are abstract nonnegative safe-integer counts, not measured energy, physical EROEI, market prices or calibration.",
+    "Computed evidence does not establish actual reconciliation, payment, reservation, Work execution, authority or user acceptance.",
+    "Supplier archive, source tests, consumer archive and offline native lock plan are received; consumer publication, fresh full frozen installation, installed bin registration and selected host uptake are separate unproved stages.",
+    "The existing source and packed bin mode is100644. Its declared programme was executed through Node. Direct execution before native npm bin normalization correctly failed with permission denied; no manual mode change or installed-bin claim was made.",
+    "All active package versions appear in the new lock, but version presence alone does not prove installed importer topology. Read-only existing closures retain their actual paths and independent exact pins.",
+    "No native Service Section document is present in this consumer repository; the Engineering source offer remains a separately owned normative contract."
+  ]
+}
