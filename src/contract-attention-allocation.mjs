@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 import { jsonId } from "./semantic-identity.mjs";
 import { encodeRelationalValue } from "@red-cup-engineering/signgraph/relational-value";
-import { createAttentionAllocationRecordJournal } from "./record-journal.mjs";
+import { createAttentionAllocationRecordLog } from "./record-journal.mjs";
 
 import { computeAllocation } from "@red-cup-engineering/signcraft/resource-flow/attention-allocation";
 import { ACTIVITYSTREAMS_CONTEXT } from "@red-cup-engineering/computer-triplet-serialized-content-engineering-services-section/activitystreams";
@@ -175,7 +175,7 @@ async function invoke(store, activity, at) {
 
 export async function run(activity, op = "invoke-service", at = new Date().toISOString(), options = {}) {
   const dataRoot = resolve(options.dataRoot ?? process.env.ATTENTION_ALLOCATION_READOUT_DATA_ROOT ?? join(NODE_ROOT, "data"));
-  const store = createAttentionAllocationRecordJournal({ root: dataRoot });
+  const store = createAttentionAllocationRecordLog({ root: dataRoot });
   if (op === "solicit-service") return solicit(store, activity, at);
   if (op === "invoke-service") return invoke(store, activity, at);
   return reject(store, activity, `unknown-provider-operation:${op}`, at);

@@ -6,7 +6,7 @@ import { put } from "@red-cup-engineering/semiotic-eavt-engineering-services-sec
  * payloads stay in the service contract; the store merely gives each admitted record durable,
  * content-addressed custody.
  */
-export function createAttentionAllocationRecordJournal({ root }) {
+export function createAttentionAllocationRecordLog({ root }) {
   return Object.freeze({
     record({ category, record }) {
       return Object.freeze({ id: put(root, category, record) });
