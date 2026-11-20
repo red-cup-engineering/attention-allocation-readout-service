@@ -4,12 +4,12 @@
  * Obsmetrologia's Cohomology/AttentionAllocation.lean).
  */
 import { operation } from "@red-cup-engineering/computer-engine/rpc/operation";
-import { validateAttentionWork, computeAttentionWork } from "@red-cup-engineering/signcraft/attention-work";
+import { admitAttentionWork, computeAttentionWork } from "@red-cup-engineering/signcraft/attention-work";
 import { decideAttentionWorkPlacement } from "@red-cup-engineering/computer-inference-engine/dispatch/work-placement";
 
 export function attentionAllocationOperations({ allocationPolicy } = {}) {
   // The provider supplies this policy outside the mathematical request body.
-  validateAttentionWork({ budget: 0, obstructions: [] }, allocationPolicy);
+  admitAttentionWork({ budget: 0, obstructions: [] }, allocationPolicy);
   const suppliedPolicy = allocationPolicy === undefined ? undefined : Object.freeze({ ...allocationPolicy });
   return Object.freeze([
     operation({
